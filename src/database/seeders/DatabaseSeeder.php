@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $path = __DIR__ . '/SqlFiles_by_py';
+        $path = __DIR__ . '/init_seeder_sqlfiles';
         $files = File::files($path);
         Log::debug('START:' . date('Y-m-d H:i:s') . "\n");
         foreach ($files as $file) {
